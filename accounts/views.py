@@ -54,3 +54,12 @@ def user(request, user_pk):
         'user' : user
     }
     return render(request, 'accounts/profile.html', context)
+
+def follow(request, user_pk):
+    User = get_user_model()
+    follower = get_object_or_404(User, pk=user_pk)
+    if request.user in follower.followers.all():
+        follower.followers.remove(request.user)
+    else:
+        follower.followers.add(request.user)
+    return redirect('accounts:profile', user_pk)

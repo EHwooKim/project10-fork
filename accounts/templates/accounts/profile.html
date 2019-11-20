@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load bootstrap4 %}
 {% block body %}
-  <h2>ID : {{user.username}}</h1>
+  <h2>ID : {{user.username}}</h2> 
   <hr>
   <h3>평점 정보</h3><br>
   <table style='width:50%'>
@@ -21,9 +21,17 @@
   <hr>
   <h3>좋아하는 영화 정보</h3><br>
   <hr>
-  <h3>팔로우 수 / 팔로잉 한 사람의 수</h3><br>
+  <h3>팔로우 수 / 팔로잉 한 사람의 수</h3> 
+  <br>
   {% with user.followers.all as followers %}
-  <h3>{{user.followers.all.count}} / {{followers|length}}</h3>
+  <h3>{{user.followings.all.count}} / {{followers|length}}</h3>
+  {% if request.user != user %}
+    {% if user in follwers %}
+    <a href="{% url 'accounts:follow' user.id %}"><h3>팔로잉취소</h3></a>
+    {% else %}
+    <a href="{% url 'accounts:follow' user.id %}"><h3>팔로잉</h3></a>
+    {% endif %}
+  {% endif %}
   {% endwith %}
   <hr>
 {% endblock %}
