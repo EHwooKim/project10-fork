@@ -39,11 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-<<<<<<< HEAD
     'django_extensions',
-=======
     'bootstrap4'
->>>>>>> 4d026f77726a8f539a7ec8c65237c0660150cd5b
 ]
 
 MIDDLEWARE = [
