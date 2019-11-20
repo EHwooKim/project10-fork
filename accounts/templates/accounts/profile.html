@@ -4,9 +4,26 @@
   <h2>ID : {{user.username}}</h1>
   <hr>
   <h3>평점 정보</h3><br>
+  <table style='width:50%'>
+    <tr>
+      <th><h3>내용</h3></th>
+      <th ><h3>평점</h3></th>
+      <th><h3>영화 제목</h3></th>
+    </tr>
+    <tr>
+      {% for review in user.review_set.all %}
+      <td>{{ review.content }}</td> 
+      <td >{{ review.score}}</td> 
+      <td>{{review.movie.title}}</td>
+  {% endfor %}
+  </tr>
+  </table>
   <hr>
   <h3>좋아하는 영화 정보</h3><br>
   <hr>
   <h3>팔로우 수 / 팔로잉 한 사람의 수</h3><br>
+  {% with user.followers.all as followers %}
+  <h3>{{user.followers.all.count}} / {{followers|length}}</h3>
+  {% endwith %}
   <hr>
 {% endblock %}
