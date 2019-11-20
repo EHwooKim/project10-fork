@@ -1,0 +1,16 @@
+{% extends 'movies/base.html' %}
+
+{% block body %}
+<div class="container">
+  <div class="row">
+    {% for movie in movies %}
+    <div class="col-3 mt-4">
+      <a href="{% url 'movies:detail' movie.pk%}">
+        <img width="100%" src="{{movie.poster_url}}" alt="{{movie.title}}">
+      </a>
+    </div>
+    {% endfor %}
+  </div>
+</div>  
+
+{% endblock %}
