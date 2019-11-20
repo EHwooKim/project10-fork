@@ -24,8 +24,22 @@
         작성자 : {{ review.user }} |
         평점 : {{ review.score }} |
         {{ review.content }}
+      {% if user == review.user %}
+      <form action="{% url 'movies:delete' movie.pk review.pk%}" method="POST" style="display:inline">
+        {% csrf_token %}
+          <button>댓글삭제</button>
+      </form> <br>
+      {% endif %}
+
       {% endfor %}
     </div>
+    {% if user.is_authenticated %}
+    <form action="{% url 'movies:new' movie.pk%}" method="POST">
+      {% csrf_token %}
+      {{form}}
+      <input type="submit" value="댓글 등록">
+    </form>
+    {% endif %}
     
   </div>
 {% endblock %}
