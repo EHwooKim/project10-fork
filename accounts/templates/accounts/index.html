@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% block body %}
   {% for user in users %}
-  {{user}}
+  <a href="{% url 'accounts:profile' user.pk %}"><h3>{{user}}</h3></a>
   {% endfor %}
 {% endblock %}
