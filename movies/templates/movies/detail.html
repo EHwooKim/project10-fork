@@ -6,7 +6,11 @@
       <div class="col-8">
           <h2>
             {{movie.title}}
-            <a href="#"><i class="far fa-star"></i></a> <!--Todo : 좋아요 기능 구현-->
+            {% if user in movie.like_users.all %}
+              <a href="{% url 'movies:like' movie.pk %}"><i class="fas fa-star" style=" color: yellow;"></i></a>
+            {% else %}
+              <a href="{% url 'movies:like' movie.pk %}"><i class="far fa-star" style=" color: yellow;"></i></a>
+            {% endif %}
           </h2> 
           <p>{{movie.audience}}</p>
           <p>{{movie.genre.name}}</p>

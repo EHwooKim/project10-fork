@@ -20,6 +20,9 @@
   </table>
   <hr>
   <h3>좋아하는 영화 정보</h3><br>
+  {% for movie in user.like_movies.all %}
+    <p>{{movie.title}}</p>
+  {% endfor %}
   <hr>
   <h3>팔로우 수 / 팔로잉 한 사람의 수</h3> 
   <br>

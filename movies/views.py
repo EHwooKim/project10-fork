@@ -38,4 +38,10 @@ def delete(request, movie_pk, review_pk):
     review.delete()
     return redirect('movies:detail', movie_pk)
 
-
+def like(request, movie_pk):
+    movie = Movie.objects.get(pk=movie_pk)
+    if request.user in movie.like_users.all():
+        movie.like_users.remove(request.user)
+    else:
+        movie.like_users.add(request.user)
+    return redirect('movies:detail', movie_pk)
