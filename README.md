@@ -10,15 +10,15 @@
 
 * 데이터베이스 설계
   * MOVIE
-![](./images/이미지 2.png)
+![](./images/이미지2.png)
   * Accounts
-![](./images/이미지 1.png)
+![](./images/이미지1.png)
 
 * Seed Data 구성
 
-![](./images/이미지 4.png)
+![](./images/이미지4.png)
 
-![](./images/이미지 5.png)
+![](./images/이미지5.png)
 
 * `accounts` App
   
@@ -38,27 +38,27 @@
 
   * 영화 목록
 
-  ![영화 목록-1](./images/영화 목록-1.png)
+  ![영화 목록-1](./images/영화목록-1.png)
 
-  ![영화 목록-2](./images/영화 목록-2.png)
+  ![영화 목록-2](./images/영화목록-2.png)
 
   * 영화 상세보기
 
-  ![영화 상세보기-1](./images/영화 상세보기-1.png)
+  ![영화 상세보기-1](./images/영화상세보기-1.png)
 
   ![영화 상세보기-2](./images/영화 상세보기-2.png)
 
   * 평점 생성
 
-  ![리뷰 생성](./images/리뷰 생성.png)
+  ![리뷰 생성](./images/리뷰생성.png)
 
   * 평점 삭제
 
-  ![리뷰 삭제](./images/리뷰 삭제.png)
+  ![리뷰 삭제](./images/리뷰삭제.png)
 
   * 좋아요 기능
 
-  ![좋아요 기능](./images/좋아요 기능.png)
+  ![좋아요 기능](./images/좋아요기능.png)
 
 
 
