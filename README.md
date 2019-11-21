@@ -10,55 +10,55 @@
 
 * 데이터베이스 설계
   * MOVIE
-![](C:\Users\student\Desktop\ssafy-fork\이미지\이미지 2.png)
+![](.\이미지\이미지 2.png)
   * Accounts
-![](C:\Users\student\Desktop\ssafy-fork\이미지\이미지 1.png)
+![](.\이미지\이미지 1.png)
 
 * Seed Data 구성
 
-![](C:\Users\student\Desktop\ssafy-fork\이미지\이미지 4.png)
+![](.\이미지\이미지 4.png)
 
-![](C:\Users\student\Desktop\ssafy-fork\이미지\이미지 5.png)
+![](.\이미지\이미지 5.png)
 
 * `accounts` App
   
   * 유저 목록
   
-  ![](C:\Users\student\Desktop\ssafy-fork\이미지\유저목록-1.png)
+  ![](.\이미지\유저목록-1.png)
   
-    ![](C:\Users\student\Desktop\ssafy-fork\이미지\유저목록-2.png)
+    ![](.\이미지\유저목록-2.png)
   
   * 유저 상세보기
   
-    ![](C:\Users\student\Desktop\ssafy-fork\이미지\상세보기-1.png)
+    ![](.\이미지\상세보기-1.png)
   
-    ![상세보기-2](C:\Users\student\Desktop\ssafy-fork\이미지\상세보기-2.png)
+    ![상세보기-2](.\이미지\상세보기-2.png)
   
 * `movies` App
 
   * 영화 목록
 
-  ![영화 목록-1](C:\Users\student\Desktop\ssafy-fork\이미지\영화 목록-1.png)
+  ![영화 목록-1](.\이미지\영화 목록-1.png)
 
-  ![영화 목록-2](C:\Users\student\Desktop\ssafy-fork\이미지\영화 목록-2.png)
+  ![영화 목록-2](.\이미지\영화 목록-2.png)
 
   * 영화 상세보기
 
-  ![영화 상세보기-1](C:\Users\student\Desktop\ssafy-fork\이미지\영화 상세보기-1.png)
+  ![영화 상세보기-1](.\이미지\영화 상세보기-1.png)
 
-  ![영화 상세보기-2](C:\Users\student\Desktop\ssafy-fork\이미지\영화 상세보기-2.png)
+  ![영화 상세보기-2](.\이미지\영화 상세보기-2.png)
 
   * 평점 생성
 
-  ![리뷰 생성](C:\Users\student\Desktop\ssafy-fork\이미지\리뷰 생성.png)
+  ![리뷰 생성](.\이미지\리뷰 생성.png)
 
   * 평점 삭제
 
-  ![리뷰 삭제](C:\Users\student\Desktop\ssafy-fork\이미지\리뷰 삭제.png)
+  ![리뷰 삭제](.\이미지\리뷰 삭제.png)
 
   * 좋아요 기능
 
-  ![좋아요 기능](C:\Users\student\Desktop\ssafy-fork\이미지\좋아요 기능.png)
+  ![좋아요 기능](.\이미지\좋아요 기능.png)
 
 
 
