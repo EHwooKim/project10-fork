@@ -1,5 +1,6 @@
 from django.shortcuts import render,get_object_or_404, redirect
 from django.contrib.auth import get_user_model
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth import login as auth_login
 from django.contrib.auth import logout as auth_logout
 from django.contrib.auth.forms import AuthenticationForm
@@ -55,6 +56,7 @@ def user(request, user_pk):
     }
     return render(request, 'accounts/profile.html', context)
 
+@login_required
 def follow(request, user_pk):
     User = get_user_model()
     follower = get_object_or_404(User, pk=user_pk)
